@@ -1,0 +1,8 @@
+=begin
+This file is not giving proper output, I'm not able to understand the mistake and also the soluton that tahey've given for this is
+not being properly understood by me.
+=end
+
+def sort_string(string)
+  [] << ((string.split).map {|word| word.length}).sort
+end
