@@ -4,8 +4,8 @@ class Restaurant
   end
 
   def cost(*orders)
-    orders.inject(0) do |total_bill, order|
-      total_bill + order.keys.inject(0) {|cost, key| cost + @menu[key]*order[key] }
+    orders.inject(0) do |bill, order|
+      bill + order.keys.inject(0) {|cost, key| cost + @menu[key]*order[key] }
     end
   end
 end
